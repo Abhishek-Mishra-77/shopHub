@@ -1,13 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Global  */
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+.section-1p {
+  padding: 40px 80px;
+}
+.p1 {
+  padding: 20px 30px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+a,
+button,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  width: 100%;
+  background-color: #f8d4bd;
+}
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Media Query for all devices  */
+@media only screen and (min-width: 1401px) {
+  .product-details-left,
+  .product-details-middle,
+  .product-details-right {
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1400px) {
+  .product-details-middle {
+    grid-area: 1/2/2/4;
+  }
+  .product-details-left {
+    grid-area: 1/1/3/2;
+    margin: 0 !important;
+  }
+  .product-details-right {
+    grid-area: 2/2/3/4;
+    margin: 0 !important;
+  }
+  .product-details-left .product-image-thumbnails {
+    flex-direction: column;
+  }
+}
+/* 1. Large Divices */
+
+@media (max-width: 1025px) {
+  .related-products-card {
+    justify-content: center;
+  }
+  .product-cards {
+    justify-content: center;
+  }
+  .product-details-left .product-image-thumbnails {
+    flex-direction: column;
+  }
+}
+
+/* 1. medium Divices */
+
+@media (max-width: 799px) {
+  .product-cards {
+    justify-content: space-around;
+  }
+  .related-products-card {
+    justify-content: space-around !important;
+  }
+  .breadCrump {
+    display: none;
+  }
+  .result-sorting p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .product-details-left {
+    grid-area: 1/1/2/4;
+  }
+  .product-details-middle {
+    grid-area: 2/1/3/4;
+  }
+  .product-details-right {
+    grid-area: 3/1/4/4;
+  }
+  .product-details-left .product-image-thumbnails {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .product-details-card {
+    width: 100% !important;
+  }
+  .product-details-left .product-image-thumbnails .product-image-thumbnail {
+    height: 4rem !important;
+    margin: 0.5rem !important;
+    width: 4rem !important;
+  }
+  .product-details-left .product-image-thumbnails .product-image-thumbnail img {
+    height: 25px !important;
+    width: 55px !important;
+  }
+  .product-details-left .product-details-name {
+    margin: 0 0 -1.5rem;
+  }
+  .product-details-left .product-details-name p {
+    font-size: 2rem !important;
+  }
+  .product-details-left .product-details-description p {
+    color: #aaa198;
+    font-size: 1rem;
+    font-weight: 550;
+  }
+  .product-details-middle {
+    height: 17rem !important;
+    width: 17rem !important;
+  }
+  .product-details-middle .product-image-gallery {
+    height: 15rem !important;
+    width: 15rem !important;
+  }
+  .product-details-middle .product-image-gallery img {
+    height: 7rem !important;
+    width: 13rem !important;
+  }
+  .product-details-middle .product-detail-price {
+    bottom: 1.2rem !important;
+    font-size: 20px !important;
+  }
+  .cart-item-qty {
+    grid-area: 2/1/3/4;
+    justify-content: flex-start;
+  }
+  .cart-item-img {
+    grid-area: 1/1/2/3;
+  }
+  .cart-item-name {
+    grid-area: 1/3/2/5;
+  }
+  .cart-item-qty {
+    grid-area: 2/1/3/4;
+    justify-content: flex-start;
+  }
+  .cart-item-price {
+    grid-area: 2/4/3/5;
+  }
+}
+
+/* 1. small Divices */
+@media (max-width: 477px) {
+  .product-cards {
+    justify-content: space-around;
+  }
+  .related-products-card {
+    justify-content: space-around !important;
+  }
+  .login-page form {
+    padding: 1rem !important;
+  }
+  .cart-item-qty {
+    margin-right: 5rem;
+  }
 }

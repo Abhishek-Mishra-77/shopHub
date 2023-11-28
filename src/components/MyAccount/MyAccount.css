@@ -1,0 +1,50 @@
+.main-content {
+  background: #f8d4bd;
+  grid-area: content;
+  padding: 2rem;
+}
+.myaccount-page {
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+table,
+td,
+th,
+tr {
+  border: 0.1rem inset #e68181;
+  border-collapse: collapse;
+}
+.order-details h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: gray;
+}
+tr:nth-child(2n) {
+  background: #f8d4bd;
+}
+th {
+  font-size: 13px;
+}
+td,
+th {
+  padding: 0.2rem;
+  text-align: left;
+}
+table .actions {
+  align-items: center;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+}
+table .actions .info {
+  color: orange;
+  font-size: 1.5rem;
+}
+table .actions .delete {
+  color: red;
+  font-size: 1.5rem;
+}

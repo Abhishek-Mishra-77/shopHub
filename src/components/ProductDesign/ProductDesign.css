@@ -1,0 +1,129 @@
+.product-design {
+  background: #fa8907;
+  border-radius: 2.5rem;
+  height: 20rem;
+  overflow: hidden;
+  position: relative;
+}
+.product-design .product-nav-design {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.product-design .product-nav-design .product-circle {
+  border: 0.1rem solid #ffffffb9;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.small {
+  background: #fb9a61;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+  height: 9rem;
+  width: 9rem;
+}
+
+.small-1 {
+  height: 22rem;
+  width: 22rem;
+}
+.medium {
+  height: 35rem;
+  width: 35rem;
+}
+.large {
+  height: 48rem;
+  width: 48rem;
+}
+
+.shade1 {
+  opacity: 1;
+}
+
+.shade2,
+.shade3,
+.shade4 {
+  opacity: 0.4;
+}
+
+.products-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  position: relative;
+  height: 8rem;
+}
+.products-nav .home-link {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 100;
+}
+.products-nav .home-link span {
+  font-size: 1rem;
+  font-size: 100;
+  color: black;
+}
+.products-nav .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.result-sorting {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.result-sorting p {
+  font-size: 14px;
+}
+select {
+  background: #f1d6c4;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+  font-size: 14px;
+  margin-top: -0.5rem;
+}
+option:checked,
+select option:hover {
+  background: #ff9500;
+  color: #fff;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.breadCrump {
+  font-size: 1.5rem;
+}
+
+.left-arrow,
+.previous-next-buttons,
+.right-arrow {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.left-arrow,
+.right-arrow {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f1d6c4;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1rem 0.5rem #fff;
+  color: #000;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.left-arrow {
+  margin-right: 1rem;
+}
+.left-arrow svg,
+.right-arrow svg {
+   font-size: 22px;
+   font-weight: bold;
+}

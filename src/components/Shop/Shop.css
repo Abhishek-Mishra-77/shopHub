@@ -1,0 +1,11 @@
+.shop_page {
+  background: #f8d4bd;
+  grid-area: content;
+  padding: 1rem;
+}
+
+.shop_products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
