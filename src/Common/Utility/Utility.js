@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Utility.css'
 import {
     SearchOutlined
@@ -6,7 +6,7 @@ import {
 
 const Utility = (props) => {
 
-   
+
 
     const themChangeHandler = () => {
         console.log('keljr')

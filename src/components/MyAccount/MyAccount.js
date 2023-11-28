@@ -1,7 +1,7 @@
 import React from 'react';
 import './MyAccount.css'
 import {
-    EyeInvisibleOutlined, EyeOutlined, DeleteOutlined, ExclamationCircleOutlined
+    EyeInvisibleOutlined, DeleteOutlined, ExclamationCircleOutlined
 } from '@ant-design/icons';
 import './MyAccount.css';
 

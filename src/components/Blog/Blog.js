@@ -8,13 +8,13 @@ import { useSelector } from 'react-redux'
 const Blog = () => {
 
     const { data: products } = useSelector((state) => state.products);
-    const { searchInput: searchInput } = useSelector((state) => state.utility);
+    const { searchInput: searchInputData } = useSelector((state) => state.utility);
 
 
     return (
         <div className='blog-page'>
             <div className='blog-product'>
-                <h4>{searchInput}</h4>
+                <h4>{searchInputData}</h4>
                 <div className='related-products-card'>
                     <Products products={products} />
                 </div>

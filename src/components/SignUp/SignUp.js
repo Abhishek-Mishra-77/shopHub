@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Login/Login.css'
 import {
-    EyeInvisibleOutlined, EyeOutlined
+    EyeInvisibleOutlined
 } from '@ant-design/icons';
 
 import '../Login/Login.css'
